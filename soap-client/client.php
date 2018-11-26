@@ -11,8 +11,10 @@ class Book
 
 // argomento 1 il path del file WSDL é da remoto.
 // argomento 2 valori da richiedere.
+// 'http://localhost/soap-server/books.wsdl',
+// 'http://localhost/soap-sim/soap-server/books.wsdl',
 $client = new SoapClient(
-        'http://localhost/soap-server/books.wsdl',
+        'http://localhost/soap-sim/soap-server/books.wsdl',
         array(
                 'classmap' => array('book' => "Book"),
         )
